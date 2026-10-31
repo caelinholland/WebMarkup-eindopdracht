@@ -1,0 +1,5 @@
+Student name: Caelin Waanders 
+Student number: 660447
+Student class: HAINF26VT1b
+GitHub Repository: https://github.com/caelinholland/WebMarkup-eindopdracht
+GitHub Pages URL: https://caelinholland.github.io/WebMarkup-eindopdracht/
