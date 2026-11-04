@@ -13,73 +13,93 @@
 </head>
 <body>
 
-    <header>
-        <a href="#home">
-            <img src="logo.png" alt="BuildYourPC Logo">
-            <span>BuildYourPC</span>
+    <header class="nav">
+        <a href="#">
+            <img src="./img/logo_cropped.png" alt="BuildYourPC Logo">
         </a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="#">Home</a></li>
                 <li><a href="hardware.html">Hardware</a></li>
                 <li><a href="performance.html">Price / Performance</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="bouwtips.html">Bouwtips</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero-section">
-            <h1>Bouw je eerste Gaming PC:<br>Een duidelijke gids voor beginners.</h1>
-            <p>Er komt veel nieuwe en ingewikkelde informatie op je af als je Googelt hoe je een gaming-PC moet bouwen. Deze website zorgt ervoor dat je het overzicht krijgt van de basisstappen en legt het principe uit van Price/Performance. Zo snap je meteen hoe je deze website navigeert om tot de informatie te komen die jij zoekt.</p>
-            <p>Ben je eerst benieuwd naar wat zo een gaming computer bouwen je zal gaan kosten?</p>
-            <a href="kosten.html" class="cta-button">Klik dan hier!</a>
+        <section class="hero-card">
+            <header>
+                <h1>Bouw je eerste Gaming PC:</h1>
+                <h2>Een duidelijke gids voor beginners</h2>
+            </header>
+            <article>
+                <figure>
+                    <img title="Reeds gebouwde gaming PC" src="img/pc_building.png" alt="Gaming PC bouwen" class="hero-image" />
+                    <figcaption>Een gaming computer bouwen is een uitdagend maar lonend proces. Zo ga je van losse onderdelen en een lege kast naar een volledige gaming machine.</figcaption>
+                </figure>
+
+                <p>
+                    Er komt veel nieuwe en ingewikkelde informatie op je af als je Googelt hoe je een gaming-PC moet bouwen.
+                    Deze website zorgt ervoor dat je het overzicht krijgt van de basisstappen, de basiscomponenten en het principe van Price/Performance.
+                    Ook krijg je tips om veelgemaakte fouten te voorkomen.
+                    Zo snap je meteen hoe je deze website navigeert om tot de informatie te komen die jij zoekt.
+                </p>
+                
+            </article>
+            <footer>
+                <h2>Ben je eerst benieuwd naar wat zo een gaming computer bouwen je zal gaan kosten?</h2>
+                <a href="performance.html" class="hero-cta">Klik dan hier!</a>
+            </footer>
         </section>
 
         <section class="info-homepage">
             <article class="homepage-card">
+                <img src="img/info.svg" alt="Informatie icoon" class="info" />
                 <h2>Het overzicht van de basisstappen</h2>
                 <p>Het bouwen van je eigen computer is op te delen in vier overzichtelijke onderdelen: de hardware begrijpen, je budget bepalen, de hardware afstemmen op je games en het daadwerkelijk in elkaar zetten. Op deze startpagina zie je precies hoe het proces in elkaar steekt, zodat je met een gerust gevoel kunt beginnen.</p>
             </article>
 
             <article class="homepage-card">
+                <img src="img/info.svg" alt="Price/Performance icoon" class="info" />
                 <h2>Het principe van Price/Performance</h2>
                 <p>Om de maximale prestaties uit je geld te halen, letten we op het zogenoemde price/performance principe. Dit betekent dat je investeert in onderdelen die je games daadwerkelijk sneller en mooier laten draaien (zoals de videokaart) en bespaart op zaken die (vrijwel) geen extra framerates opleveren (een nóg snellere SSD).</p>
             </article>
 
             <article class="homepage-card">
+                <img src="img/info.svg" alt="Hulp icoon" class="info" />
                 <h2>Hoe deze website jou helpt</h2>
                 <p>Elke stap in het bouwproces heeft een eigen verdiepingspagina op deze site. Of je nu wilt weten of onderdelen op elkaar passen, hoeveel budget je nodig hebt of hoe je montagefouten voorkomt: via het overzicht hieronder klik je direct door naar het specifieke onderwerp waar jij op dit moment naar op zoek bent.</p>
             </article>
         </section>
 
-        <section class="stappenplan-section">
+        <section class="stappenplan">
             <h2>STAPPENPLAN</h2>
-            <section class="steps-grid">
-                <article class="step-card">
+            <section class="stappen-grid">
+                <article class="stap-card">
                     <h3>Stap 1: Hardware Basics & Compatibiliteit</h3>
                     <p>Ontdek wat alle onderdelen doen en hoe ze samenwerken.</p>
-                    <a href="stap1.html">Ga naar stap <span aria-hidden="true">&rarr;</span></a>
+                    <a href="stap1.html">Ga naar stap <img src="img/arrow4flip.png" alt="Pijl" /></a>
                 </article>
 
-                <article class="step-card">
+                <article class="stap-card">
                     <h3>Stap 2: Price/Performance Gids</h3>
                     <p>Bekijk hoe je jouw budget optimaal verdeelt. Geef geen cent meer uit dan nodig is!</p>
-                    <a href="stap2.html">Ga naar stap <span aria-hidden="true">&rarr;</span></a>
+                    <a href="stap2.html">Ga naar stap <img src="img/arrow4flip.png" alt="Pijl" /></a>
                 </article>
 
-                <article class="step-card">
+                <article class="stap-card">
                     <h3>Stap 3: Game Prestaties</h3>
                     <p>Match je onderdelen met de games die je wilt spelen.</p>
-                    <a href="stap3.html">Ga naar stap <span aria-hidden="true">&rarr;</span></a>
+                    <a href="stap3.html">Ga naar stap <img src="img/arrow4flip.png" alt="Pijl" /></a>
                 </article>
 
-                <article class="step-card">
+                <article class="stap-card">
                     <h3>Stap 4: Valkuilen & Bouwtips</h3>
                     <p>Voorkom veelgemaakte fouten tijdens het in elkaar zetten van computers.</p>
-                    <a href="stap4.html">Ga naar stap <span aria-hidden="true">&rarr;</span></a>
+                    <a href="stap4.html">Ga naar stap <img src="img/arrow4flip.png" alt="Pijl" /></a>
                 </article>
             </section>
         </section>
@@ -87,7 +107,9 @@
 
     <footer>
         <section class="footer-col">
-            <p><strong>BuildYourPC</strong> biedt een duidelijke gids voor beginners om de performance en URL budgettering van een UBU budget te optimaliseren voor jouw volgende game PC.</p>
+            <figure>
+                <img src="./img/green_orange_nobg.png" alt="BuildYourPC Logo">
+            <p><strong>BuildYourPC</strong> is dé onafhankelijke gids voor beginnende pc-bouwers. Behaal de maximale prijs/performance uit <em>UW</em> budget zonder technische stress.</p>
         </section>
 
         <section class="footer-col">
@@ -114,7 +136,7 @@
         </aside>
 
         <section class="footer-bottom">
-            <p>&copy; 2026 Gaming PC Gids | HTML Proefexamen | Alle contractuele informatie, alle rechten voorbehouden.</p>
+            <p>&copy; 2026 Gaming PC Gids - HBO Project WebMarkup. Niet commerciële informatieve website. Alle rechten voorbehouden.</p>
         </section>
     </footer>
 
