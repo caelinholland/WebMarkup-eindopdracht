@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Caelin Waanders">
+        <meta name="description" content="Haal het maximale uit je budget. Bekijk handige budgetklassen en prijs-prestatieverhoudingen voor jouw ideale gaming-pc.">
+        <meta name="keywords" content="prijs prestatie, pc budget, videokaart klassen, budget gaming pc, hardware prijskwaliteit">
         <title>BuildYourPC - Price / Performance</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
@@ -10,6 +13,10 @@
         <link rel="shortcut icon" href="./favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
         <link rel="manifest" href="./site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=IBMPlexSans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     </head>
     <body>
 
@@ -17,7 +24,15 @@
             <a href="index.html">
                 <img src="./img/logo_cropped.png" alt="BuildYourPC Logo">
             </a>
-            <nav>
+
+            <input type="checkbox" id="nav-toggle" class="sr-only nav-toggle-input">
+            <label for="nav-toggle" class="hamburger-btn mobile-only">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+            </label>
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="hardware.html">Hardware</a></li>
@@ -32,7 +47,8 @@
         <main>
             <section class="hero-card">
                 <header>
-                    <h1>De Price/Performance Gids (Editie 2026)</h1>
+                    <h1>Price/Performance Gids</h1>
+                    <h2>(2026 Editie)</h2>
                 </header>
                 <p>
                     Door de gestegen prijzen van geheugen, opslag en videokaarten ligt de instapgrens voor een volwaardige 1080p gaming pc momenteel rond de €1.100 tot €1.350. Door je budget slim te verdelen voorkom je dat je nog veel meer geld uitgeeft aan randzaken en haal je de maximale framerate uit elke euro.
@@ -44,7 +60,7 @@
             </section>
 
             <section class="cards-section desktop-only">
-                <h2>BUDGETVERDELING</h2>
+                <h2>budgetverdeling</h2>
                 <header class="section-intro">
                     <p>
                         Hoe verdeel je jouw zuurverdiende geld over alle componenten zonder concessies te doen op de onderdelen die er écht toe doen voor je game-ervaring?
@@ -76,15 +92,15 @@
                 </section>
             </section>
 
-            <section class="klassen-section">
-                <h2>KLASSENVERGELIJKING</h2>
-                
-                <article class="tabel-container">
-                    <h3 class="sr-only">Vergelijkingstabel gaming pc-klassen</h3>
+            <section class="cards-section">
+                <h2>klassenvergelijking</h2>
+                <header class="section-intro">
                     <p>
                         Hieronder staat een vergelijkingstabel van de verschillende gaming PC-klassen met bijbehorend budget. Hier wordt met "soepel draaien" bedoeld dat je een spel zo goed als constant op minimaal 60 frames per seconde kunt spelen.
                     </p>
-
+                </header>
+                <article class="tabel-container">
+                    <h3 class="sr-only">Vergelijkingstabel gaming pc-klassen</h3>
                     <table class="klassen-tabel">
                         <thead>
                             <tr>

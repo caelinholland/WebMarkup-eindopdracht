@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Caelin Waanders">
+        <meta name="description" content="Ontdek alle essentiële computeronderdelen. Van processor (CPU) en videokaart (GPU) tot werkgeheugen en moederbord uitgelegd voor beginners.">
+        <meta name="keywords" content="hardware componenten, CPU, GPU, RAM, moederbord, pc onderdelen uitleg">
         <title>BuildYourPC - Hardware</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
@@ -10,6 +13,9 @@
         <link rel="shortcut icon" href="./favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
         <link rel="manifest" href="./site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=IBMPlexSans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -17,7 +23,15 @@
             <a href="index.html">
                 <img src="./img/logo_cropped.png" alt="BuildYourPC Logo">
             </a>
-            <nav>
+
+            <input type="checkbox" id="nav-toggle" class="sr-only nav-toggle-input">
+            <label for="nav-toggle" class="hamburger-btn mobile-only">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+            </label>
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a class="active" href="hardware.html">Hardware</a></li>
@@ -40,7 +54,7 @@
             </section>
 
             <section class="cards-section">
-                <h2>COMPONENTEN</h2>
+                <h2>componenten</h2>
                 <header class="section-intro">
                     <p>
                         Er zijn best wel wat verschillende soorten onderdelen te koop om in je pc te zetten, echter zijn lang niet alle onderdelen vereist om je (gaming-)PC aan en draaiend te krijgen. Of er zijn varianten op componenten waar er één soort vereist is (ik kies naar jou waterkoeler of luchtkoeler voor processor). Dit is de lijst aan vereiste componenten:
@@ -51,7 +65,7 @@
                     <h3 class="sr-only">Overzicht van componenten</h3>
                     <article class="comp-card">
                         <h3>Moederbord</h3>
-                        <p class="comp-tag">Basis</p>
+                        <p class="comp-tag">Mobo</p>
                         <figure class="comp-figure">
                             <img src="img/motherboard_cropped.png" alt="Moederbord">
                         </figure>
@@ -59,7 +73,7 @@
 
                     <article class="comp-card">
                         <h3>Behuizing*</h3>
-                        <p class="comp-tag">Basis</p>
+                        <p class="comp-tag">Case</p>
                         <figure class="comp-figure">
                             <img src="img/case_cropped.png" alt="Behuizing">
                         </figure>
@@ -122,7 +136,7 @@
             </section>
 
             <section class="cards-section desktop-only">
-                <h2>COMPATIBILITEIT & GENERATIES</h2>
+                <h2>compatibiliteit & generaties</h2>
 
                 <section class="compat-stack">
                     <h3 class="sr-only">Compatibiliteit onderwerpen</h3>

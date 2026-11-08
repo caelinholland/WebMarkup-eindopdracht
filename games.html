@@ -3,13 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BuildYourPC - Game Prestaties</title>
+        <meta name="author" content="Caelin Waanders">
+        <meta name="description" content="Check welke hardware je nodig hebt voor jouw favoriete games. Match jouw pc-onderdelen met de juiste resolutie en prestaties.">
+        <meta name="keywords" content="game prestaties, FPS games, resolutie overzicht, hardware voor games, 1080p 1440p 4K gaming">        <title>BuildYourPC - Game Prestaties</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
         <link rel="icon" type="image/svg+xml" href="./favicon.svg">
         <link rel="shortcut icon" href="./favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
         <link rel="manifest" href="./site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=IBMPlexSans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     </head>
     <body>
 
@@ -17,7 +23,15 @@
             <a href="index.html">
                 <img src="./img/logo_cropped.png" alt="BuildYourPC Logo">
             </a>
-            <nav>
+
+            <input type="checkbox" id="nav-toggle" class="sr-only nav-toggle-input">
+            <label for="nav-toggle" class="hamburger-btn mobile-only">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+            </label>
+
+            <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="hardware.html">Hardware</a></li>
@@ -58,7 +72,9 @@
                         </p>
                         <section class="game-pijl-wrapper">
                             <h4 class="game-pijl-titel green">Lichte games lijst</h4>
-                            <img src="img/arrow-down-green.png" alt="Pijl naar beneden">
+                            <a href="#licht-games">
+                                <img src="img/arrow-down-green.png" alt="Pijl naar beneden">
+                            </a>
                         </section>
                     </article>
 
@@ -76,7 +92,9 @@
                         </p>
                         <section class="game-pijl-wrapper">
                             <h4 class="game-pijl-titel orange">Middelzware games lijst</h4>
-                            <img src="img/arrow-down-orange.png" alt="Pijl naar beneden">
+                            <a href="#middel-games">
+                                <img src="img/arrow-down-orange.png" alt="Pijl naar beneden">
+                            </a>
                         </section>
                     </article>
 
@@ -94,14 +112,16 @@
                         </p>
                         <figure class="game-pijl-wrapper">
                             <h4 class="game-pijl-titel red">Zware games lijst</h4>
-                            <img src="img/arrow-down-red.png" alt="Pijl naar beneden">
+                            <a href="#zwaar-games">
+                                <img src="img/arrow-down-red.png" alt="Pijl naar beneden">
+                            </a>
                         </figure>
                     </article>
                 </section>
 
-                <section class="game-lijst-grid">
+                <section id="game-lijst" class="game-lijst-grid">
                     <h3 class="sr-only">Game lijsten</h3>
-                    <article class="game-lijst-kaart border-green">
+                    <article id="licht-games" class="game-lijst-kaart border-green">
                         <h3 class="mobile-only">Lichte games</h3>
                         <ul>
                             <li>Minecraft</li>
@@ -117,7 +137,7 @@
                         </ul>
                     </article>
 
-                    <article class="game-lijst-kaart border-orange">
+                    <article id="middel-games" class="game-lijst-kaart border-orange">
                         <h3 class="mobile-only">Middelzware spellen</h3>
                         <ul>
                             <li>Minecraft (met shaders)</li>
@@ -133,7 +153,7 @@
                         </ul>
                     </article>
 
-                    <article class="game-lijst-kaart border-red">
+                    <article id="zwaar-games" class="game-lijst-kaart border-red">
                         <h3 class="mobile-only">Zware spellen</h3>
                         <ul>
                             <li>Cyberpunk 2077</li>
@@ -150,8 +170,8 @@
                 </section>
             </section>
 
-            <section class="resolutie-section">
-                <h2>RESOLUTIEOVERZICHT</h2>
+            <section class="cards-section">
+                <h2>resolutieoverzicht</h2>
 
                 <section class="resolutie-stack">
                     <h3 class="sr-only">Uitleg resoluties</h3>

@@ -1,6 +1,3 @@
-/* Fonts die ik ook heb gebruikt in Figma design */
-@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=IBMPlexSans:wght@300;400;500;600;700&display=swap');
-
 /* 
    Reset CSS |
    http://meyerweb.com/eric/tools/css/reset/ 
@@ -57,27 +54,6 @@ table {
     border-spacing: 0;
 }
 
-:root {
-    --prim-bl: #002642;
-    --prim-bl-lt: #4D677B;
-    --prim-bl-dk: #001B2E;
-
-    --sec-grn: #6BD425;
-    --sec-grn-lt: #97E166;
-    --sec-grn-dk: #4B941A;
-
-    --acc-orange: #FF4000;
-    --acc-blue: #02C3BD;
-    --acc-red: #81171B;
-    
-    --nt-lt: #EAE8ED;
-    --nt-dk: #464647;
-    --nt-gr: #A4A2A6;
-
-    --font-heading: "Fustat", sans-serif;
-    --font-body: "IBMPlexSans", sans-serif;
-}
-
 html, body {
     overflow-x: hidden;
 }
@@ -87,9 +63,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: var(--font-body);
+    font-family: "IBMPlexSans", sans-serif;
     color: white;
-    background-color: var(--nt-lt);
+    background-color: #EAE8ED;
     line-height: 1.6;
 }
 
@@ -117,7 +93,6 @@ small {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
 }
@@ -133,7 +108,7 @@ small {
     text-align: left;
     line-height: 1.5;
     border-radius: 1.5rem;
-    color: var(--prim-bl);
+    color: #002642;
     overflow: hidden;
     box-sizing: border-box;
     margin-top: -1em;
@@ -147,7 +122,7 @@ header.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--prim-bl);.comp-card img {
+    background-color: #002642;.comp-card img {
     width: 100%;
     max-width: 120px;
     height: 90px;
@@ -185,30 +160,30 @@ header.nav nav a:not(:hover) {
 }
 
 header.nav nav a:hover {
-    color: var(--prim-bl);
-    background-color: var(--sec-grn);
+    color: #002642;
+    background-color: #6BD425;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
 }
 
 header.nav nav a:active {
-    color: var(--nt-lt);
-    background-color: var(--sec-grn-dk);
+    color: #EAE8ED;
+    background-color: #4B941A;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     transition: all 0.1s ease-in-out;
 }
 
 header.nav nav a.active {
-    color: var(--prim-bl);
-    background-color: var(--sec-grn);
+    color: #002642;
+    background-color: #6BD425;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
 }
 
 header.nav nav a.contact:hover {
-    background-color: var(--acc-blue);
+    background-color: #02C3BD;
 }
 
 header.nav a {
@@ -222,6 +197,33 @@ header.nav a {
 header.nav a img {
     width: 7rem;
     height: auto;
+}
+
+.nav-toggle-input {
+    display: none;
+}
+
+.hamburger-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    padding: 0;
+    margin-right: 1.5rem;
+    z-index: 1001;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
 }
 
 main {
@@ -264,7 +266,7 @@ main {
 }
 
 /* .hero-card header {
-    background-color: var(--prim-bl);
+    background-color: #002642;
     padding: 1rem;
     border-radius: 1.5rem 1.5rem 0 0;
     width: 100%;
@@ -274,30 +276,32 @@ main {
 
 .hero-card header {
     flex: 0 0 100%;
-    background-color: var(--prim-bl);
+    background-color: #002642;
     padding: 1rem;
     box-sizing: border-box;
     line-height: 1.4;
 }
 
 .hero-card header h1 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
+    letter-spacing: 0.2rem;
 }
 
 .hero-card header h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.5rem;
-    background-color: var(--prim-bl);
+    background-color: #002642;
     border-radius: 25px 25px 0 0;
+    letter-spacing: 0.1rem;
 }
 
 /* .hero-card p {
     display: flex;
     flex-direction: row;
     background-color: #FFFFFF;
-    color: var(--prim-bl);
+    color: #002642;
     padding: 2rem;
     width: 100%;
     box-sizing: border-box;
@@ -314,7 +318,7 @@ main {
 .hero-card p {
     flex: 1 1 70%;
     background-color: #FFFFFF;
-    color: var(--prim-bl);
+    color: #002642;
     padding: 2rem;
     box-sizing: border-box;
     text-align: left;
@@ -323,6 +327,10 @@ main {
     margin: 0;
     display: flex;
     align-items: center;
+}
+
+.hero-card h1:first-letter {
+    font-size: 4rem; /* Een nette, leesbare grootte */
 }
 
 /* .hero-card figure {
@@ -340,7 +348,7 @@ main {
 
 .hero-card figure figcaption {
     font-size: 0.8rem;
-    color: var(--nt-dk);
+    color: #464647;
     margin-top: 0.5rem;
 }
 
@@ -352,7 +360,7 @@ main {
 }
 
 /* .hero-card footer {
-    background-color: var(--prim-bl);
+    background-color: #002642;
     padding: 01rem;
     border-radius: 0 0 1.5rem 1.5rem;
     justify-content: center;
@@ -363,7 +371,7 @@ main {
 
 .hero-card footer {
     flex: 0 0 100%;
-    background-color: var(--prim-bl);
+    background-color: #002642;
     padding: 1rem;
     border-radius: 0 0 1.5rem 1.5rem;
     justify-content: center;
@@ -374,17 +382,17 @@ main {
 }
 
 .hero-card footer h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.5rem;
-    color: var(--nt-lt);
+    color: #EAE8ED;
     flex: 2;
 }
 
 .cta-button {
     position: relative;
     display: inline-block;
-    background-color: var(--sec-grn);
-    color: var(--prim-bl);
+    background-color: #6BD425;
+    color: #002642;
     text-decoration: none;
     padding: 1rem 0;
     margin: 0.5rem;
@@ -403,7 +411,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--acc-blue);
+    background-color: #02C3BD;
     transform: scale(0);
     transform-origin: bottom left;
     transition: transform 0.4s ease-in-out;
@@ -411,7 +419,7 @@ main {
 }
 
 .cta-button:hover {
-    color: var(--prim-bl);
+    color: #002642;
 }
 
 .cta-button:hover::after {
@@ -424,7 +432,7 @@ main {
     padding: 2.5rem 3rem;
     border-radius: 0 0 25px 25px;
     text-align: left;
-    color: var(--prim-bl);
+    color: #002642;
     width: 100%;
     box-sizing: border-box;
 } */
@@ -438,12 +446,12 @@ main {
     flex-direction: row;
     gap: 2rem;
     text-align: left;
-    color: var(--prim-bl);
+    color: #002642;
 }
 
 .homepage-card {
     flex: 1;
-    border: 1px solid var(--sec-grn);
+    border: 1px solid #6BD425;
     border-radius: 3rem;
     padding: 2rem;
     line-height: 1.3;
@@ -461,14 +469,14 @@ main {
 }
 
 .homepage-card h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .homepage-card p {
-    font-family: var(--font-body);
+    font-family: "IBMPlexSans", sans-serif;
 }
 
 .stappenplan {
@@ -479,10 +487,10 @@ main {
 }
 
 .stappenplan h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--prim-bl);
+    color: #002642;
 }
 
 .stappen-grid {
@@ -494,7 +502,7 @@ main {
 
 .stap-card {
     background-color: #FFFFFF;
-    border: 1px solid var(--sec-grn);
+    border: 1px solid #6BD425;
     border-radius: 3rem;
     padding: 2rem;
     line-height: 1.3;
@@ -503,19 +511,18 @@ main {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    color: var(--prim-bl);
+    color: #002642;
     gap: 1rem;
 }
 
 .stap-card h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .stap-card a {
     display: inline-flex;
-    align-items: right;
     justify-content: right;
     text-decoration: none;
     padding: 1rem 0;
@@ -523,7 +530,7 @@ main {
     font-weight: bold;
     font-size: 1.2rem;
     width: 100%;
-    color: var(--acc-orange);
+    color: #FF4000;
     border-radius: 5px;
 }
 
@@ -542,10 +549,11 @@ main {
 }
 
 .cards-section > h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--prim-bl);
+    color: #002642;
+    text-transform: uppercase;
 }
 
 .componenten-grid {
@@ -557,21 +565,21 @@ main {
 
 .comp-card {
     background-color: #FFFFFF;
-    border: 1px solid var(--sec-grn);
+    border: 1px solid #6BD425;
     border-radius: 2rem;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: var(--prim-bl);
+    color: #002642;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
     min-height: 15rem;
     box-sizing: border-box;
 }
 
 .comp-card h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
@@ -579,8 +587,9 @@ main {
 
 .comp-tag {
     font-size: 0.75rem;
-    color: var(--nt-dk);
+    color: #464647;
     margin-bottom: 1rem;
+    word-spacing: 0.3rem;
 }
 
 .comp-figure {
@@ -605,7 +614,7 @@ main {
     text-align: left;
     width: 100%;
     font-size: 0.8rem;
-    color: var(--nt-dk);
+    color: #464647;
     margin-top: -0.5rem;
     display: flex;
     flex-direction: column;
@@ -622,10 +631,10 @@ main {
 
 .compat-card {
     background-color: #FFFFFF;
-    border: 1px solid var(--sec-grn);
+    border: 1px solid #6BD425;
     border-radius: 2.5rem;
     padding: 2.5rem;
-    color: var(--prim-bl);
+    color: #002642;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -633,13 +642,13 @@ main {
 }
 
 .compat-card h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .compat-card p {
-    font-family: var(--font-body);
+    font-family: "IBMPlexSans", sans-serif;
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -654,7 +663,7 @@ main {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--acc-orange);
+    color: #FF4000;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
@@ -666,7 +675,7 @@ main {
 }
 
 .page-cta-banner {
-    background-color: var(--prim-bl);
+    background-color: #002642;
     border-radius: 50px;
     padding: 2rem 3rem;
     display: flex;
@@ -677,9 +686,9 @@ main {
 }
 
 .page-cta-banner h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 2rem;
-    color: var(--nt-lt);
+    color: #EAE8ED;
     flex: 2;
     text-align: center;
     font-weight: 700;
@@ -701,10 +710,10 @@ main {
 }
 
 .klassen-section > h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--prim-bl);
+    color: #002642;
 }
 
 .tabel-container {
@@ -714,7 +723,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: var(--prim-bl);
+    color: #002642;
 }
 
 .tabel-container p {
@@ -731,27 +740,31 @@ main {
 
 .klassen-tabel th, 
 .klassen-tabel td {
-    border: 1px solid var(--nt-gr);
+    border: 1px solid #A4A2A6;
     padding: 1rem;
     font-size: 1rem;
     vertical-align: top;
 }
 
 .klassen-tabel th {
-    background-color: var(--prim-bl);
+    background-color: #002642;
     color: white;
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
 }
 
 .klassen-tabel tr {
-    background-color: rgba(255, 255, 255);
+    background-color: #FFF;
+}
+
+.klassen-tabel tr:nth-child(even) {
+    background-color: #CFF;
 }
 
 .klassen-voetnoot {
     font-size: 0.8rem;
-    color: var(--nt-dk);
+    color: #464647;
     margin-top: -1.5rem;
 }
 
@@ -779,14 +792,14 @@ main {
 
 .game-kaart {
     background-color: #FFFFFF;
-    border: 1px solid var(--nt-gr);
+    border: 1px solid #A4A2A6;
     border-radius: 2.5rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: var(--prim-bl);
+    color: #002642;
     box-sizing: border-box;
     gap: 1.5rem;
 }
@@ -804,7 +817,7 @@ main {
 }
 
 .game-icoon-header h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -836,15 +849,15 @@ main {
 }
 
 .green {
-    color: var(--sec-grn-dk);
+    color: #4B941A;
 }
 
 .orange {
-    color: var(--acc-orange);
+    color: #FF4000;
 }
 
 .red {
-    color: var(--acc-red);
+    color: #81171B;
 }
 
 .game-pijl-wrapper img {
@@ -854,23 +867,23 @@ main {
 
 .game-lijst-kaart {
     background-color: #FFFFFF;
-    border: 1px solid var(--nt-gr);
+    border: 1px solid #A4A2A6;
     border-radius: 2rem;
     padding: 1.5rem;
     text-align: left;
-    color: var(--prim-bl);
+    color: #002642;
     box-sizing: border-box;
 }
 
 .game-lijst-kaart h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
 }
 
 .game-lijst-kaart ul {
-    padding-left: 1.2rem;
+    /* padding-left: 1.2rem; */
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -879,6 +892,7 @@ main {
 
 .game-lijst-kaart ul li {
     font-size: 0.95rem;
+    text-indent: 1.2rem;
 }
 
 /* Resolutieoverzicht Sectie */
@@ -891,10 +905,10 @@ main {
 }
 
 .resolutie-section > h2 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--prim-bl);
+    color: #002642;
 }
 
 .resolutie-stack {
@@ -906,10 +920,12 @@ main {
 
 .resolutie-card {
     background-color: #FFFFFF;
-    border: 1px solid var(--nt-gr);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #A4A2A6;
     border-radius: 2rem;
     padding: 2rem;
-    color: var(--prim-bl);
+    color: #002642;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -917,7 +933,7 @@ main {
 }
 
 .resolutie-card h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -936,18 +952,25 @@ main {
 
 .bouwtips-card {
     background-color: #FFFFFF;
-    border: 1px solid var(--nt-gr);
+    border-width: 0.15rem;
+    border-style: solid;
+    border-color: #6BD425;
     border-radius: 2.5rem;
     padding: 2.5rem;
-    color: var(--prim-bl);
+    color: #002642;
     text-align: left;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+.double {
+    border-style: double;
+    border-width: 0.5rem;
+}
+
 .bouwtips-card h3 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -959,12 +982,12 @@ main {
 }
 
 .bouwtips-item {
-    border-top: 1px solid var(--nt-lt);
+    border-top: 1px solid #EAE8ED;
     padding-top: 1rem;
 }
 
 .bouwtips-item h4 {
-    font-family: var(--font-heading);
+    font-family: "Fustat", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -985,15 +1008,15 @@ main {
 }
 
 .label-niet {
-    color: var(--acc-red);
+    color: #81171B;
 }
 
 .label-semi {
-    color: var(--acc-orange);
+    color: #FF4000;
 }
 
 .label-altijd {
-    color: var(--sec-grn-dk);
+    color: #4B941A;
 }
 
 .back-to-top {
@@ -1021,12 +1044,129 @@ main {
     background-color: #00ff66;
 }
 
+/* --- Contactformulier Stijlen --- */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-fieldset {
+    border: 1px solid #6BD425;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-legend {
+    font-family: "Fustat", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    color: #002642;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #002642;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #A4A2A6;
+    border-radius: 0.5rem;
+    font-family: "IBMPlexSans", sans-serif;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-submit-wrapper {
+    display: flex;
+    justify-content: stretch;
+    margin-top: 0.5rem;
+}
+
+.contact-submit {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+/* Verberg de checkbox */
+.cookie-toggle-input {
+    display: none;
+}
+
+/* Stijl voor de vaste cookie-balk onderaan het scherm */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #002642;
+    color: white;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 9999;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #6BD425;
+    gap: 1rem;
+}
+
+.cookie-banner p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cookie-btn {
+    background-color: #6BD425;
+    color: #002642;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-btn:hover {
+    background-color: #02C3BD;
+}
+
+.cookie-toggle-input:checked ~ .cookie-banner {
+    display: none;
+}
+
 footer {
     background-color: #002244;
     color: #FFFFFF;
     padding: 2rem;
     position: relative;
-    font-family: var(--font-body), sans-serif;
+    font-family: "IBMPlexSans", sans-serif, sans-serif;
     line-height: 1.5;
     display: flex;
     flex-direction: row;
@@ -1105,11 +1245,11 @@ footer .footer-nav > li > a {
 
 /* overwrite */
 .border-green {
-    border-color: var(--sec-grn);
+    border-color: #6BD425;
 }
 
 .border-orange {
-    border-color: var(--acc-orange);
+    border-color: #FF4000;
 }
 
 .border-red {
@@ -1166,16 +1306,16 @@ footer .footer-nav > li > a {
 
     .klassen-tabel th, 
     .klassen-tabel td {
-        border: 1px solid var(--nt-gr);
+        border: 1px solid #A4A2A6;
         padding: 0.4rem;
         font-size: 0.9rem;
         vertical-align: top;
     }
 
     .klassen-tabel th {
-        background-color: var(--prim-bl);
+        background-color: #002642;
         color: white;
-        font-family: var(--font-heading);
+        font-family: "Fustat", sans-serif;
         font-size: 1.2rem;
         font-weight: 600;
     }
@@ -1187,7 +1327,7 @@ footer .footer-nav > li > a {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        color: var(--prim-bl);
+        color: #002642;
     }
 
     footer {
@@ -1272,24 +1412,99 @@ footer .footer-nav > li > a {
         display: none;
     }
 
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .cookie-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     main {
-    margin: 0 auto;
-    padding: 1.5rem;
-    gap: 3rem;
-    width: 100%;
-    box-sizing: border-box;
-}
+        margin: 0 auto;
+        padding: 1.5rem;
+        gap: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
     
     html {
         font-size: 69%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 880px) {
+        header.nav {
+        position: relative;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    header.nav nav.nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #002642;
+        padding: 5rem 2rem 2rem 2rem;
+        box-sizing: border-box;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        transition: right 0.4s ease-in-out;
+        z-index: 1000;
+        display: block;
+    }
+
+    .nav-toggle-input:checked ~ nav.nav-menu {
+        right: 0;
+    }
+
+    header.nav nav.nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    header.nav nav.nav-menu ul li {
+        width: 100%;
+        margin: 0;
+    }
+
+    header.nav nav.nav-menu a {
+        display: block;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    header.nav nav.nav-menu a.active {
+        background-color: #6BD425;
+        color: #002642;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 880px) {
     .componenten-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    header.nav nav a {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
     .game-kaarten-grid {
         grid-template-columns: 1fr;
     }

@@ -2,7 +2,10 @@
 <html lang="nl">
     <head>
         <meta charset="UTF-8">
+        <meta name="author" content="Caelin Waanders">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BuildYourPC is dé onafhankelijke gids voor beginnende pc-bouwers. Leer de basis van hardware, compatibiliteit en bouw je eigen gaming-PC.">
+        <meta name="keywords" content="gaming PC bouwen, pc samenstellen, hardware basis, pc gids, computer bouwen voor beginners">
         <title>BuildYourPC - Home</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
@@ -10,20 +13,31 @@
         <link rel="shortcut icon" href="./favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
         <link rel="manifest" href="./site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=IBMPlexSans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <header id="home" class="nav">
-            <a href="#">
+            <a href="index.html">
                 <img src="./img/logo_cropped.png" alt="BuildYourPC Logo">
             </a>
-            <nav>
+            
+            <input type="checkbox" id="nav-toggle" class="sr-only nav-toggle-input">
+            <label for="nav-toggle" class="hamburger-btn mobile-only">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+            </label>
+
+            <nav class="nav-menu">
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="hardware.html">Hardware</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="hardware.html">Hardware & Basics</a></li>
                     <li><a href="price-performance.html">Price / Performance</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="bouwtips.html">Bouwtips</a></li>
+                    <li><a href="games.html">Game Prestaties</a></li>
+                    <li><a href="bouwtips.html">Valkuilen & Bouwtips</a></li>
                     <li><a class="contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -138,5 +152,12 @@
                 <p>&copy; 2026 Gaming PC Gids - HBO Project WebMarkup. Niet commerciële informatieve website. Alle rechten voorbehouden.</p>
             </section>
         </footer>
+
+        <input type="checkbox" id="cookie-accept" class="sr-only cookie-toggle-input">
+
+        <aside class="cookie-banner">
+            <p>Deze website maakt gebruik van cookies om de gebruikerservaring te verbeteren.</p>
+            <label for="cookie-accept" class="cookie-btn">Akkoord</label>
+        </aside>
     </body>
 </html>
