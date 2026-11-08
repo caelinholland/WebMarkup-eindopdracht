@@ -441,6 +441,7 @@ main {
     border-radius: 1.5rem;
 }
 
+/* homepage cards */
 .info-homepage {
     display: flex;
     flex-direction: row;
@@ -451,7 +452,7 @@ main {
 
 .homepage-card {
     flex: 1;
-    border: 1px solid #6BD425;
+    border: 0.1rem solid #6BD425;
     border-radius: 3rem;
     padding: 2rem;
     line-height: 1.3;
@@ -479,6 +480,7 @@ main {
     font-family: "IBMPlexSans", sans-serif;
 }
 
+/* Stappenplan homepage */
 .stappenplan {
     display: flex;
     flex-direction: column;
@@ -502,7 +504,7 @@ main {
 
 .stap-card {
     background-color: #FFFFFF;
-    border: 1px solid #6BD425;
+    border: 0.1rem solid #6BD425;
     border-radius: 3rem;
     padding: 2rem;
     line-height: 1.3;
@@ -556,6 +558,7 @@ main {
     text-transform: uppercase;
 }
 
+/* componenten hardware */
 .componenten-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -565,7 +568,7 @@ main {
 
 .comp-card {
     background-color: #FFFFFF;
-    border: 1px solid #6BD425;
+    border: 0.1rem solid #6BD425;
     border-radius: 2rem;
     padding: 1.5rem;
     display: flex;
@@ -631,7 +634,7 @@ main {
 
 .compat-card {
     background-color: #FFFFFF;
-    border: 1px solid #6BD425;
+    border: 0.1rem solid #6BD425;
     border-radius: 2.5rem;
     padding: 2.5rem;
     color: #002642;
@@ -647,7 +650,7 @@ main {
     font-weight: 600;
 }
 
-.compat-card p {
+.compat-card p, .compat-card li {
     font-family: "IBMPlexSans", sans-serif;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -674,6 +677,7 @@ main {
     height: auto;
 }
 
+/* bottom page cta banner */
 .page-cta-banner {
     background-color: #002642;
     border-radius: 50px;
@@ -716,6 +720,8 @@ main {
     color: #002642;
 }
 
+/* tabel */
+
 .tabel-container {
     padding: 2rem;
     width: 100%;
@@ -740,7 +746,7 @@ main {
 
 .klassen-tabel th, 
 .klassen-tabel td {
-    border: 1px solid #A4A2A6;
+    border: 0.1rem solid #A4A2A6;
     padding: 1rem;
     font-size: 1rem;
     vertical-align: top;
@@ -792,7 +798,7 @@ main {
 
 .game-kaart {
     background-color: #FFFFFF;
-    border: 1px solid #A4A2A6;
+    border: 0.1rem solid #A4A2A6;
     border-radius: 2.5rem;
     padding: 2rem;
     display: flex;
@@ -867,7 +873,7 @@ main {
 
 .game-lijst-kaart {
     background-color: #FFFFFF;
-    border: 1px solid #A4A2A6;
+    border: 0.1rem solid #A4A2A6;
     border-radius: 2rem;
     padding: 1.5rem;
     text-align: left;
@@ -920,7 +926,7 @@ main {
 
 .resolutie-card {
     background-color: #FFFFFF;
-    border-width: 1px;
+    border-width: 0.1rem;
     border-style: solid;
     border-color: #A4A2A6;
     border-radius: 2rem;
@@ -952,7 +958,7 @@ main {
 
 .bouwtips-card {
     background-color: #FFFFFF;
-    border-width: 0.15rem;
+    border-width: 0.1rem;
     border-style: solid;
     border-color: #6BD425;
     border-radius: 2.5rem;
@@ -982,7 +988,7 @@ main {
 }
 
 .bouwtips-item {
-    border-top: 1px solid #EAE8ED;
+    border-top: 0.1rem solid #EAE8ED;
     padding-top: 1rem;
 }
 
@@ -1037,7 +1043,7 @@ main {
     font-weight: bold;
     font-size: 0.9rem;
     transition: background-color 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 4px #0C0C0C;
 }
 
 .back-to-top a:hover {
@@ -1054,7 +1060,7 @@ main {
 }
 
 .contact-fieldset {
-    border: 1px solid #6BD425;
+    border: 0.1rem solid #6BD425;
     border-radius: 1.5rem;
     padding: 2rem;
     display: flex;
@@ -1086,7 +1092,7 @@ main {
 .form-group select,
 .form-group textarea {
     padding: 0.8rem;
-    border: 1px solid #A4A2A6;
+    border: 0.1rem solid #A4A2A6;
     border-radius: 0.5rem;
     font-family: "IBMPlexSans", sans-serif;
     font-size: 1rem;
@@ -1232,7 +1238,7 @@ footer a:hover {
 footer .footer-bottom {
     flex: 0 0 100%;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
     margin-top: 3rem;
     padding-top: 1.5rem;
     font-size: 0.85rem;
@@ -1306,7 +1312,7 @@ footer .footer-nav > li > a {
 
     .klassen-tabel th, 
     .klassen-tabel td {
-        border: 1px solid #A4A2A6;
+        border: 0.1rem solid #A4A2A6;
         padding: 0.4rem;
         font-size: 0.9rem;
         vertical-align: top;

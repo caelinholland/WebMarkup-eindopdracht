@@ -22,7 +22,7 @@
 
         <header id="home" class="nav">
             <a href="index.html">
-                <img src="./img/logo_cropped.png" alt="BuildYourPC Logo">
+                <img src="./img/logo_cropped.png" alt="BuildYourPC Logo" title="Build Your PC">
             </a>
             
             <input type="checkbox" id="nav-toggle" class="sr-only nav-toggle-input">
@@ -36,10 +36,10 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="hardware.html">Hardware & Basics</a></li>
+                    <li><a href="hardware.html">Hardware &amp; Basics</a></li>
                     <li><a href="price-performance.html">Price / Performance</a></li>
                     <li><a href="games.html">Game Prestaties</a></li>
-                    <li><a href="bouwtips.html">Valkuilen & Bouwtips</a></li>
+                    <li><a href="bouwtips.html">Valkuilen &amp; Bouwtips</a></li>
                     <li><a class="active contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -59,18 +59,18 @@
                 </footer>
             </section>
 
-            <section class="compatibiliteit-section">
+            <section class="cards-section">
                 <h2>CONTACTFORMULIER</h2>
 
                 <section class="compat-stack">
-                    <article class="compat-card">
+                    <h3 class="sr-only">Contact formulier</h3>
+                    <article class="compat-card double">
                         <h3>Stuur ons een bericht</h3>
-                        <p>
-                            Jouw data blijft van jou: We verkopen je gegevens nooit door en sturen geen ongevraagde reclame.<br>
-                            Geen verkoopdruk: We verkopen zelf geen onderdelen, dus ons advies is puur gericht op wat voor jouw budget en games de beste keuze is.<br>
-                            Op jouw tempo: Je zit nergens aan vast. Neem de tijd om ons advies door te lezen en kies zelf wanneer je klaar bent voor de volgende stap.
-                        </p>
-
+                        <ul>
+                            <li>Jouw data blijft van jou: We verkopen je gegevens nooit door en sturen geen ongevraagde reclame.</li>
+                            <li>Geen verkoopdruk: We verkopen zelf geen onderdelen, dus ons advies is puur gericht op wat voor jouw budget en games de beste keuze is.</li>
+                            <li>Op jouw tempo: Je zit nergens aan vast. Neem de tijd om ons advies door te lezen en kies zelf wanneer je klaar bent voor de volgende stap.</li>
+                        </ul>
                         <form action="#" method="post" class="contact-form">
                             <fieldset class="contact-fieldset">
                                 <legend class="contact-legend">Jouw Gegevens</legend>
@@ -121,26 +121,28 @@
 
         <footer>
             <section class="footer-col">
+                <h2 class="sr-only">Over BuildYourPC</h2>
                 <figure>
-                    <img src="./img/green_orange_nobg.png" alt="BuildYourPC Logo">
+                    <a href="index.html#home">
+                        <img src="./img/logo_cropped.png" alt="BuildYourPC Logo" title="Build Your PC">
+                    </a>
                 </figure>
-                <p><strong>BuildYourPC</strong> is dé onafhankelijke gids voor beginnende pc-bouwers. Behaal de maximale prijs/performance uit <em>UW</em> budget zonder technische stress.</p>
+                <p class="desktop-only"><strong>BuildYourPC</strong> is dé onafhankelijke gids voor beginnende pc-bouwers. Behaal de maximale prijs/performance uit <em>UW</em> budget zonder technische stress.</p>
             </section>
 
             <section class="footer-col desktop-only">
                 <h3>Sitemap-content</h3>
                 <ul class="footer-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="hardware.html">Hardware & Basics</a></li>
+                    <li><a href="hardware.html">Hardware &amp; Basics</a></li>
                     <li><a href="price-performance.html">Price/Performance</a></li>
                     <li><a href="games.html">Game Prestaties</a></li>
-                    <li><a href="bouwtips.html">Valkuilen & Bouwtips</a></li>
+                    <li><a href="bouwtips.html">Valkuilen &amp; Bouwtips</a></li>
                 </ul>
             </section>
 
             <section class="footer-col desktop-only">
                 <h3>Contact</h3>
-                <p>Neem gerust contact met ons op via dit <a href="contact.html">formulier</a></p>
+                <p>Neem gerust contact met ons op via dit <a href="formulier.html">formulier</a></p>
                 <p><strong>Info</strong></p>
                 <p>Vak: Webdesign</p>
                 <p>School: Inholland</p>
@@ -148,7 +150,7 @@
             </section>
 
             <section class="footer-bottom">
-                <h3 class="sr-only">Copyright en informatie</h3>
+                <h2 class="sr-only">Copyright en Disclaimer</h2>
                 <p>&copy; 2026 Gaming PC Gids - HBO Project WebMarkup. Niet commerciële informatieve website. Alle rechten voorbehouden.</p>
             </section>
         </footer>
